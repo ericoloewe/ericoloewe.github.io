@@ -1,0 +1,22 @@
+{
+  "name": "ericoloewe.github.io",
+  "version": "0.0.1",
+  "description": "This project describe a little about me :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericoloewe/ericoloewe.github.io.git"
+  },
+  "keywords": [
+    "ericoloewe"
+  ],
+  "author": "Érico de Souza Loewe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericoloewe/ericoloewe.github.io/issues"
+  },
+  "homepage": "https://github.com/ericoloewe/ericoloewe.github.io#readme"
+}
