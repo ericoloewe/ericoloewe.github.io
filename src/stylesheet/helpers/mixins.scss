@@ -1,0 +1,29 @@
+/**
+* Mixins helpers
+*/
+
+@mixin loader($color: rgba(#000, .05), $z-index: 1) {
+  &:before {
+    background: $color;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: $z-index;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    z-index: $z-index + 1;
+    width: 30px;
+    height: 30px;
+    background: url('#{$base-svg-path}/tail-spin.svg') center center no-repeat;
+    background-size: 100% 100%;
+  }
+}

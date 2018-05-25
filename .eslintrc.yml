@@ -1,0 +1,68 @@
+extends: airbnb
+
+env:
+  browser: true
+  node: false
+
+rules:
+  no-unused-vars: off
+  strict: off
+  no-var: off
+  no-undef: off
+  no-param-reassign: off
+  vars-on-top: off
+  func-names: off
+  import/no-dynamic-require: off
+  import/no-amd: off
+  import/prefer-default-export: off
+  prefer-arrow-callback: off
+  global-require: off
+  no-shadow: off
+  no-new: off
+  no-extra-boolean-cast: off
+  object-shorthand: off
+  prefer-template: off
+  prefer-const: off
+  radix: off
+  no-unused-expressions: off
+  max-len: off
+  consistent-return: off
+  class-methods-use-this: off
+  newline-per-chained-call: off
+  no-useless-constructor: off
+  no-useless-return: off
+  no-restricted-syntax: off
+  no-console: off
+  block-scoped-var: off
+  comma-dangle: ["error", "never"]
+  camelcase: off
+  default-case: off
+  new-parens: off
+  no-bitwise: off
+  no-useless-escape: off
+  no-underscore-dangle: off
+  no-extra-semi: off
+  semi: off
+  new-cap: off
+  guard-for-in: off
+  no-restricted-globals: off
+  eol-last: off
+  linebreak-style: off
+  no-continue: off
+  no-plusplus: off
+
+  # react
+  react/jsx-filename-extension: [1, { "extensions": [".js"] }]
+  react/prop-types: off
+  arrow-parens: off
+  jsx-a11y/label-has-for: off
+  react/sort-comp: off
+  jsx-a11y/anchor-is-valid: off
+  react/self-closing-comp: off
+  react/no-danger: off
+  react/jsx-no-bind: off
+
+plugins:
+  - react
+  - jsx-a11y
+  - import
