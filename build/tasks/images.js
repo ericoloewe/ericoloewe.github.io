@@ -3,7 +3,6 @@
  */
 import gifsicle from "imagemin-gifsicle"
 import gulp from "gulp"
-import gulpRename from 'gulp-rename'
 import imagemin from "gulp-imagemin"
 import jpegtran from "imagemin-jpegtran"
 import optipng from "imagemin-optipng"

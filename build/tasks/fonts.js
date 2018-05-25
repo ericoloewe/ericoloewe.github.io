@@ -2,7 +2,6 @@
  * Server task
  */
 import gulp from 'gulp'
-import gulpRename from 'gulp-rename'
 import path from 'path'
 import { buildConfig, EnvConfig } from '../configs'
 

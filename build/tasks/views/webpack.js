@@ -3,11 +3,12 @@
  */
 
 import gulp from "gulp"
-import webpack from "webpack"
+import gulpRename from 'gulp-rename'
 import path from "path"
+import webpack from "webpack"
 import { currentWebpackConfig } from "./config";
-import { serverTask } from "../server/server";
 import { EnvConfig, buildConfig } from "../../configs";
+import { serverTask } from "../server/server";
 
 class ViewsTask {
   create() {
@@ -49,6 +50,7 @@ class ViewsTask {
     }
 
     return gulp.src(path.resolve(buildConfig.DIST_PATH, 'views/home.html'))
+      .pipe(gulpRename('index.html'))
       .pipe(gulp.dest(path.resolve(buildConfig.DIST_PATH, '..')))
   }
 
