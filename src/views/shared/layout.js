@@ -17,15 +17,33 @@ export class LayoutView extends React.Component {
   }
 
   renderHead() {
+    const styles = [
+      { source: '/dist/styles/vendor.css' },
+      { source: '/dist/styles/common.css' }
+    ]
+
+    return (
+      styles.map(s => (
+        <link rel="stylesheet" type="text/css" href={s.source} />
+      ))
+    )
+
     return (
       <head>
+        {styles}
       </head>
     )
   }
 
   renderBottom() {
+    const scripts = [
+      { source: '/dist/scripts/vendor.bundle.js' }
+    ]
+
     return (
-      <React.Fragment/>
+      scripts.map(s => (
+        <script type="text/javascript" src={s.source} />
+      ))
     )
   }
 }
