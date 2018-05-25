@@ -19,9 +19,6 @@ yarn-*.log*
 package-lock.json
 yarn.lock
 
-# Build
-dist/
-
 # Temp
 temp/
 
