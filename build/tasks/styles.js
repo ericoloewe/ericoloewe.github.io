@@ -23,7 +23,7 @@ class StylesTask {
 
   _buildStyles() {
     let stream = gulp
-      .src(path.resolve(buildConfig.SOURCE_PATH, 'stylesheet/*.*'))
+      .src(path.resolve(buildConfig.SOURCE_PATH, 'styles/*.*'))
       .pipe(gulpSourcemaps.init())
       .pipe(gulpSass({ errLogToConsole: true }))
       .pipe(gulpAutoprefixer({ browsers: ['last 5 version'] }))

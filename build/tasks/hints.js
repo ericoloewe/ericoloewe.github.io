@@ -22,7 +22,7 @@ class HintsTask {
 
   _esLint() {
     return Promise.resolve()
-    // return gulp.src(path.resolve(buildConfig.SOURCE_PATH, 'javascript/**/*.js'))
+    // return gulp.src(path.resolve(buildConfig.SOURCE_PATH, 'scripts/**/*.js'))
       // .pipe(eslint())
       // .pipe(eslint.format())
       // .pipe(eslint.failAfterError());
@@ -38,7 +38,7 @@ class HintsTask {
 
   _styleLint() {
     return Promise.resolve()
-    // return gulp.src(path.resolve(buildConfig.SOURCE_PATH, 'stylesheet/**/*.scss'))
+    // return gulp.src(path.resolve(buildConfig.SOURCE_PATH, 'styles/**/*.scss'))
       // .pipe(gulpStylelint({
       //   failAfterError: true,
       //   fix: true,

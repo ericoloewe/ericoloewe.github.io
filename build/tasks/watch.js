@@ -46,7 +46,7 @@ class WatchTask {
   _watchScripts() {
     gulp.task('watch:scripts', () => new Promise((resolve, reject) => {
       try {
-        gulp.watch('src/javascript/**/*.js')
+        gulp.watch('src/scripts/**/*.js')
           .on('change', gulp.series('scripts', serverTask.reload))
         resolve()
       } catch (ex) {
@@ -72,7 +72,7 @@ class WatchTask {
   _watchStyles() {
     gulp.task('watch:styles', () => new Promise((resolve, reject) => {
       try {
-        gulp.watch('src/stylesheet/**/*.scss')
+        gulp.watch('src/styles/**/*.scss')
           .on('change', gulp.series('styles'))
         resolve()
       } catch (ex) {
