@@ -2,9 +2,9 @@
  * Reset Style
  */
 
- body {
+body {
   overflow-x: hidden;
- }
+}
 
 ul {
   list-style: none;
@@ -13,10 +13,4 @@ ul {
 a {
   color: #333;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }

@@ -5,11 +5,18 @@ import React from 'react'
 
 export class LayoutView extends React.Component {
   render() {
+    const props = Object.assign({}, this.props)
+
+    delete props.customHead
+    delete props.customBottom
+
     return (
       <html>
         {this.renderHead()}
         <body>
-          {this.props.children}
+          <main {...props}>
+            {props.children}
+          </main>
           {this.renderBottom()}
         </body>
       </html>
@@ -17,33 +24,36 @@ export class LayoutView extends React.Component {
   }
 
   renderHead() {
+    const { customHead } = this.props
     const styles = [
-      { source: '/dist/styles/vendor.css' },
-      { source: '/dist/styles/common.css' }
+      { source: '~styles/common.css' },
+      { source: '~styles/vendor.css' }
     ]
 
     return (
-      styles.map(s => (
-        <link rel="stylesheet" type="text/css" href={s.source} />
-      ))
-    )
-
-    return (
       <head>
-        {styles}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {styles.map(s => (
+          <link key={s.source} rel="stylesheet" type="text/css" href={s.source} />
+        ))}
+        {customHead}
       </head>
     )
   }
 
   renderBottom() {
+    const { customBottom } = this.props
     const scripts = [
-      { source: '/dist/scripts/vendor.bundle.js' }
+      { source: '~scripts/vendor.bundle.js' }
     ]
 
     return (
-      scripts.map(s => (
-        <script type="text/javascript" src={s.source} />
-      ))
+      <React.Fragment>
+        {scripts.map(s => (
+          <script key={s.source} type="text/javascript" src={s.source} />
+        ))}
+        {customBottom}
+      </React.Fragment>
     )
   }
 }
