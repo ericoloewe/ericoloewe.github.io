@@ -2,6 +2,7 @@
  * Layout
  */
 import React from 'react'
+import { googleAnalytics } from '../components'
 
 export class LayoutView extends React.Component {
   render() {
@@ -37,6 +38,7 @@ export class LayoutView extends React.Component {
           <link key={s.source} rel="stylesheet" type="text/css" href={s.source} />
         ))}
         {customHead}
+        <span dangerouslySetInnerHTML={{ __html: googleAnalytics }} />
       </head>
     )
   }
