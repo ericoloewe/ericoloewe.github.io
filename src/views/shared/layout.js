@@ -2,7 +2,7 @@
  * Layout
  */
 import React from 'react'
-import { googleAnalytics } from '../components'
+import { GoogleAnalytics, GoogleFirebase } from '../components'
 
 export class LayoutView extends React.Component {
   render() {
@@ -38,7 +38,7 @@ export class LayoutView extends React.Component {
           <link key={s.source} rel="stylesheet" type="text/css" href={s.source} />
         ))}
         {customHead}
-        <span dangerouslySetInnerHTML={{ __html: googleAnalytics }} />
+        <GoogleAnalytics />
       </head>
     )
   }
@@ -46,11 +46,14 @@ export class LayoutView extends React.Component {
   renderBottom() {
     const { customBottom } = this.props
     const scripts = [
-      { source: '~scripts/vendor.bundle.js' }
+      { source: '~scripts/vendor.bundle.js' },
+      { source: '~scripts/common-modules.bundle.js' }
     ]
 
     return (
       <React.Fragment>
+        <GoogleFirebase />
+        <span dangerouslySetInnerHTML={{ __html: GoogleFirebase }} />
         {scripts.map(s => (
           <script key={s.source} type="text/javascript" src={s.source} />
         ))}

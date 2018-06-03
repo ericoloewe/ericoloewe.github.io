@@ -4,6 +4,7 @@
 import fs from 'fs'
 import path from 'path'
 import ReactToHtmlWebpackPlugin from "react-to-html-webpack-plugin"
+import webpack from 'webpack';
 import { buildConfig } from '../../../configs'
 
 export const commonWebpackConfig = {
@@ -31,13 +32,14 @@ export const commonWebpackConfig = {
         loader: 'current-env'
       },
       {
-        test: /\.html$/,
+        test: /\.(html)|(svg)$/,
         exclude: /node_modules/,
         loader: 'raw-loader'
       }
     ]
   },
   plugins: [
+    new webpack.NamedModulesPlugin(),
     new ReactToHtmlWebpackPlugin({
       excludedChunks: ['containers']
     })

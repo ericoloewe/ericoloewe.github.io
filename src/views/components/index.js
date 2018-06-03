@@ -1,7 +1,5 @@
 /**
  * Components
  */
-import googleAnalytics from './google-analytics.html'
-
+export { GoogleAnalytics, GoogleFirebase } from './google'
 export { } from '../../components'
-export { googleAnalytics }
