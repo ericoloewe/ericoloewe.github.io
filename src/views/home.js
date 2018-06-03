@@ -3,6 +3,7 @@
  */
 import React from 'react'
 import { LayoutView } from './shared/layout';
+import { Icons } from '../svgs';
 
 export default class Home extends React.Component {
   render() {
@@ -26,6 +27,21 @@ export default class Home extends React.Component {
           <h1 className="name">Érico de Souza Loewe</h1>
           <p className="description">Welcome to my website 😎</p>
           <div className="links">
+            <a href="https://github.com/ericoloewe" title="Github link">
+              <Icons.Github />
+            </a>
+            <a href="https://www.linkedin.com/in/érico-loewe-2302aba0" title="Linkedin link">
+              <Icons.Linkedin />
+            </a>
+            <a href="mailto:ericoloewe@gmail.com" title="Email link">
+              <Icons.Mail />
+            </a>
+            <a href="https://www.instagram.com/ericoloewe/" title="Instagram link">
+              <Icons.Instagram />
+            </a>
+            <a href="https://www.facebook.com/erico.souzaloewe" title="Facebook link">
+              <Icons.Facebook />
+            </a>
           </div>
         </div>
       </LayoutView>
