@@ -4,7 +4,7 @@
 import del from "del"
 import gulp from "gulp"
 import path from "path"
-import { buildConfig } from "../configs";
+import { buildConfig, EnvConfig } from "../configs";
 
 class CleanTask {
   create() {
@@ -12,7 +12,10 @@ class CleanTask {
   }
 
   async _cleanDist() {
-    await del(path.resolve(buildConfig.ROOT_PATH, 'index.html'))
+    if (EnvConfig.isPrd()) {
+      await del(path.resolve(buildConfig.ROOT_PATH, 'index.html'))
+    }
+
     await del(buildConfig.DIST_PATH)
   }
 }

@@ -2,10 +2,11 @@
  * Build config
  */
 import path from "path"
+import { buildConstants } from "./constants"
 
 const ROOT_PATH = path.resolve(__dirname, '../../');
 const SOURCE_PATH = path.resolve(ROOT_PATH, 'src');
-const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
+const DIST_PATH = path.resolve(ROOT_PATH, buildConstants.DIST_PATH);
 const TEMP_PATH = path.resolve(ROOT_PATH, 'temp');
 const SCRIPTS_PATH = path.resolve(SOURCE_PATH, 'scripts');
 const STYLES_PATH = path.resolve(SOURCE_PATH, 'styles');

@@ -3,6 +3,7 @@
  */
 
 export const production = {
+  DIST_PATH: 'dist',
   FILE_REAL_PATH: {
     IMAGES: '/dist/images',
     FONTS: '/dist/fonts',

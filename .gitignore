@@ -22,5 +22,8 @@ yarn.lock
 # Temp
 temp/
 
+# Build
+dist-dev/
+
 # Path
 .idea/
