@@ -2,6 +2,7 @@
  * Tasks > Webpack > Task
  */
 
+import del from "del"
 import gulp from "gulp"
 import gulpRename from 'gulp-rename'
 import path from "path"
@@ -45,13 +46,19 @@ class ViewsTask {
   }
 
   _buildHome() {
-    if (EnvConfig.isDev()) {
-      return Promise.resolve()
+    let promise = Promise.resolve()
+
+    if (EnvConfig.isPrd()) {
+      const homePath = path.resolve(buildConfig.DIST_PATH, 'views/home.html')
+
+      promise = gulp.src(homePath)
+        .pipe(gulpRename('index.html'))
+        .pipe(gulp.dest(path.resolve(buildConfig.DIST_PATH, '..')))
+
+      del(homePath)
     }
 
-    return gulp.src(path.resolve(buildConfig.DIST_PATH, 'views/home.html'))
-      .pipe(gulpRename('index.html'))
-      .pipe(gulp.dest(path.resolve(buildConfig.DIST_PATH, '..')))
+    return promise
   }
 
   _getCompiler() {

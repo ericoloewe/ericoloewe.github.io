@@ -53,7 +53,6 @@ export class LayoutView extends React.Component {
     return (
       <React.Fragment>
         <GoogleFirebase />
-        <span dangerouslySetInnerHTML={{ __html: GoogleFirebase }} />
         {scripts.map(s => (
           <script key={s.source} type="text/javascript" src={s.source} />
         ))}

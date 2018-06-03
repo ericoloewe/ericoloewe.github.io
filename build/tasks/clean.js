@@ -1,8 +1,9 @@
 /**
  * Server task
  */
-import gulp from "gulp"
 import del from "del"
+import gulp from "gulp"
+import path from "path"
 import { buildConfig } from "../configs";
 
 class CleanTask {
@@ -10,8 +11,9 @@ class CleanTask {
     gulp.task('clean', gulp.series(this._cleanDist.bind(this)))
   }
 
-  _cleanDist() {
-    return del(buildConfig.DIST_PATH)
+  async _cleanDist() {
+    await del(path.resolve(buildConfig.ROOT_PATH, 'index.html'))
+    await del(buildConfig.DIST_PATH)
   }
 }
 
