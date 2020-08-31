@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://ericoloewe.github.io/sitemap.xml
