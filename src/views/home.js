@@ -25,7 +25,7 @@ export default class Home extends React.Component {
         </div>
         <div className="profile-info">
           <h1 className="name">Érico de Souza Loewe</h1>
-          <p className="description">Welcome to my website 😎</p>
+          <p className="description">Software Developer at CWI Software</p>
           <div className="links">
             <a href="https://github.com/ericoloewe" title="Github link">
               <Icons.Github />

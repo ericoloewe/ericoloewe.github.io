@@ -1,5 +1,0 @@
-/**
- * Constants
- */
-
-export const common = {}
