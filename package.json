@@ -1,6 +1,7 @@
 {
   "name": "ericoloewe.github.io",
   "version": "0.1.0",
+  "homepage": "https://ericoloewe.github.io/",
   "private": true,
   "scripts": {
     "deploy": "gh-pages -d out --dest ./docs",

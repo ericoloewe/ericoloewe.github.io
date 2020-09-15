@@ -12,13 +12,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-M37P5XS');`,
         }}
       ></script>
+
       <title>Home - Érico de Souza Loewe</title>
+
       <link rel="icon" href="/favicon.ico" />
       <meta name="author" content="Érico de Souza Loewe" />
-      <meta name="description" content="A page about Érico de Souza Loewe" />
+      <meta name="description" content="Érico de Souza Loewe é um brasileiro, amante da música, que atua como desenvolvedor de software na CWI software e está estudando Ciência da Computação na Universidade FEEVALE" />
       <meta
         name="keywords"
-        content="Érico,Loewe,About,Me,HTML,CSS,JavaScript"
+        content="Érico,Souza,Loewe,About"
       />
 
       <script
@@ -38,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ></iframe>
       </noscript>
       <div className="profile-picture">
-        <img src="/profile.jpg" alt="My profile photo" />
+        <img src="/profile.jpg" alt="Foto de perfil de Érico de Souza Loewe" />
       </div>
       <div className="profile-info">
         <h1 className="name">Biografia de Érico de Souza Loewe</h1>
@@ -53,14 +55,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <br />
           👨‍💻 Estudando Ciência da Computação na{" "}
           <a href="https://www.feevale.br/" target="_blank">
-            Feevale
+            Universidade Feevale
           </a>{" "}
           <br />
         </p>
         <div className="links">
           <a
             href="https://github.com/ericoloewe"
-            title="Github link"
+            title="Link do Github do Érico"
             target="_blank"
           >
             <span>
@@ -81,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
           <a
             href="https://www.linkedin.com/in/érico-de-souza-loewe-2302aba0"
-            title="Linkedin link"
+            title="Link do Linkedin do Érico"
             target="_blank"
           >
             <span>
@@ -102,7 +104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
           <a
             href="mailto:ericoloewe@gmail.com"
-            title="Email link"
+            title="Link do Email do Érico"
             target="_blank"
           >
             <span>
@@ -123,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
           <a
             href="https://www.instagram.com/ericoloewe/"
-            title="Instagram link"
+            title="Link do Instagram do Érico"
             target="_blank"
           >
             <span>
@@ -144,7 +146,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
           <a
             href="https://www.facebook.com/erico.souzaloewe"
-            title="Facebook link"
+            title="Link do Facebook do Érico"
             target="_blank"
           >
             <span>
