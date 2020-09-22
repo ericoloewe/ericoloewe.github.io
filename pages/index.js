@@ -58,6 +58,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             Universidade Feevale
           </a>{" "}
           <br />
+          👨‍💻 Desenvolvendo um{" "}
+          <a href="https://ericoloewe.github.io/computer-science-tcc/" target="_blank">
+            plugin de recomendação para o Spotify
+          </a>{" "}
+          <br />
         </p>
         <div className="links">
           <a
