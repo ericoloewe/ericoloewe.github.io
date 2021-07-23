@@ -4,6 +4,7 @@
   "homepage": "https://ericoloewe.github.io/",
   "private": true,
   "scripts": {
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d out --dest ./docs",
     "dev": "next dev",
     "build": "next build && next export",
