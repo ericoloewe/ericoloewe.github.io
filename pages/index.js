@@ -49,8 +49,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           🎸 Amo meu violão <br />
           🛹 Amo aventura e tenho um long <br />
           👨‍💻 Software Developer na{" "}
-          <a href="https://cwi.com.br/" target="_blank">
-            CWI Software
+          <a href="https://www.dbccompany.com.br/" target="_blank">
+            DBC Company
           </a>{" "}
           <br />
           👨‍💻 Estudando Ciência da Computação na{" "}
@@ -359,7 +359,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       body {
         overflow-x: hidden;
         font-size: 14px;
-        background: url(/home-background.jpg);
+        background: url(/erico-loewe.jpg);
         background-size: cover;
       }
 
