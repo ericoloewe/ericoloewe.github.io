@@ -363,7 +363,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         background-size: cover;
       }
 
-      @media (min-width: 1024px) {
+      @media (max-width: 1024px) {
         body {
           background-size: auto;
         }
