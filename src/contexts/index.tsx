@@ -5,7 +5,7 @@ interface Props {
 export function AppProviders({ children }: Props) {
   return (
     <>
-      children
+      {children}
     </>
   );
 }
