@@ -4,16 +4,26 @@
   "homepage": "https://ericoloewe.github.io/",
   "private": true,
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d out --dest ./docs",
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "predeploy": "echo . > ./out/.nojekyll",
+    "deploy": "gh-pages -d out --dotfiles",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "gh-pages": "3.1.0",
-    "next": "9.3.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "11.1.2",
+    "normalize.css": "8.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "1.43.3"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.31",
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2",
+    "gh-pages": "3.2.3",
+    "typescript": "4.4.4"
   }
 }
