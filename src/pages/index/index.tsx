@@ -40,6 +40,7 @@ const Page: NextPage = () => {
             <a href="https://ericoloewe.github.io/computer-science-tcc/" target="_blank">
               plugin de recomendação para o Spotify
           </a>{" "}
+            <br />
           👨‍💻 Desenvolveu um{" "}
             <a href="https://ericoloewe.github.io/snake/" target="_blank">
               snake game
