@@ -30,13 +30,14 @@
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-
+  width: 100vw;
+  
   @media (max-width: 1024px) {
-    visibility: hidden;
+    width: auto;
+    height: 100vh;
   }
 }
 

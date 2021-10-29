@@ -1,6 +1,12 @@
 @import "reset.scss";
 
 html,
+body,
+#__next {
+  height: 100vh;
+}
+
+html,
 body {
   padding: 0;
   margin: 0;
@@ -53,21 +59,6 @@ body {
 
   to {
     background-position: 0 0;
-  }
-}
-
-body {
-  @media (max-width: 1024px) {
-    overflow-x: hidden;
-    font-size: 14px;
-    background: url(/erico-loewe.jpg);
-    background-size: cover;
-  }
-}
-
-@media (max-width: 1024px) {
-  body {
-    background-size: auto;
   }
 }
 
