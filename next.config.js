@@ -1,23 +1,37 @@
-/** @type {import('next').NextConfig} */
-
-const isExport = process.argv.some(a => a.includes('export'));
-const isDev = process.argv.some(a => a.includes('dev'));
+const isDev = process.env.NODE_ENV === 'development';
 const basePath = isDev ? '' : '';
 
-module.exports = {
-  reactStrictMode: true,
-  basePath: basePath,
-  assetPrefix: `${basePath}/`,
-  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
-    return {
-      '/': { page: '/index' },
-    }
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: isDev ? undefined : basePath,
+  assetPrefix: isDev ? undefined : `${basePath}/`,
   env: {
     BASE_PATH: basePath
   },
-  images: isExport ? {
-    loader: "imgix",
-    path: "",
-  } : undefined,
+  reactStrictMode: false,
+  images: { unoptimized: true },
+  experimental: { missingSuspenseWithCSRBailout: false, },
+  webpack: (config, { isServer }) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"]
+    });
+
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      net: false,
+      tls: false,
+      fs: false,
+      child_process: false,
+    }
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+    }
+
+    return config;
+  }
 }
+
+module.exports = nextConfig;

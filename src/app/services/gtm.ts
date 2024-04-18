@@ -1,4 +1,3 @@
-import { LoggerUtil } from "../utils/logger"
 
 interface DataLayer {
   event?: string
@@ -17,10 +16,10 @@ class GtmService {
       })
 
       if (tagsWereNotFired) {
-        LoggerUtil.log('There is no gtm tags for the event: ', eventName)
+        console.log('There is no gtm tags for the event: ', eventName)
       }
     } catch (ex) {
-      LoggerUtil.log('There was a problem to send the gtm event ', ex)
+      console.log('There was a problem to send the gtm event ', ex)
     }
 
     return tagsWereNotFired

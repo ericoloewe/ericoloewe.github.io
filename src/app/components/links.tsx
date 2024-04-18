@@ -1,63 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from './index.module.scss'
+"use client";
 
-const Page: NextPage = () => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Érico de Souza Loewe</title>
-
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="author" content="Érico de Souza Loewe" />
-        <meta name="description" content="Érico de Souza Loewe é um brasileiro, amante da música, que atua como desenvolvedor de software na DBC company e é formado Ciência da Computação na Universidade FEEVALE" />
-        <meta
-          name="keywords"
-          content="Érico,Souza,Loewe,About,Software,Music,Developer"
-        />
-      </Head>
-
-      <img className={styles.background} src="./erico-loewe.jpg" alt="Surfista Érico de Souza Loewe na praia" />
-      <main className={`container ${styles.home}`}>
-        <div className={styles.profile_info}>
-          <h1 className={styles.name}>Érico de Souza Loewe</h1>
-          <p className={styles.description}>
-            🎵 Amo musica <br />
-          🎸 Amo meu violão <br />
-          🛹 Amo aventura e tenho um long <br />
-          🏄🏽‍♂️ Amo surf <br />
-          👨‍💻 Software Developer na{" "}
-            <a href="https://www.dbccompany.com.br/" target="_blank">
-              DBC Company
-          </a>{" "}
-            <br />
-          👨‍💻 Formado em Ciência da Computação na{" "}
-            <a href="https://www.feevale.br/" target="_blank">
-              Universidade Feevale
-          </a>{" "}
-            <br />
-          👨‍💻 Desenvolveu um{" "}
-            <a href="https://ericoloewe.github.io/computer-science-tcc/" target="_blank">
-              plugin de recomendação para o Spotify
-          </a>{" "}
-            <br />
-          👨‍💻 Desenvolveu um{" "}
-            <a href="https://ericoloewe.github.io/snake/" target="_blank">
-              snake game
-          </a>{" "}
-            <br />
-          </p>
-          <Links />
-        </div>
-      </main>
-    </div>
-  )
-}
-
-export default Page
-
-function Links() {
-  return <div className={styles.links}>
+export function Links() {
+  return <div className="links">
     <a
       href="https://github.com/ericoloewe"
       title="Link do Github do Érico"
@@ -158,5 +102,5 @@ function Links() {
         </svg>
       </span>
     </a>
-  </div>
+  </div>;
 }
