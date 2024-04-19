@@ -26,18 +26,18 @@ export default function RootLayout({
         <meta property="og:url" content="https://ericoloewe.github.io/" />
         <meta property="og:title" content="Érico de Souza Loewe" />
         <meta property="og:description" content="Érico de Souza Loewe é um brasileiro, amante da música, que atua como desenvolvedor de software na DBC company e é formado Ciência da Computação na Universidade FEEVALE" />
-        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta property="og:image" content="/site.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ericoloewe.github.io/" />
         <meta property="twitter:title" content="Érico de Souza Loewe" />
         <meta property="twitter:description" content="Érico de Souza Loewe é um brasileiro, amante da música, que atua como desenvolvedor de software na DBC company e é formado Ciência da Computação na Universidade FEEVALE" />
-        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta property="twitter:image" content="/site.png" />
 
         <meta name="author" content="Érico de Souza Loewe" />
         <meta name="description" content="Érico de Souza Loewe é um brasileiro, amante da música, que atua como desenvolvedor de software na DBC company e é formado Ciência da Computação na Universidade FEEVALE" />
         <meta name="keywords" content="Érico,Souza,Loewe,About,Software,Music,Developer" />
-        
+
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
