@@ -72,7 +72,15 @@
 //   }
 // }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+
   .profile_info {
     padding: 20px 10px;
     background: rgba(255, 255, 255, 0.9);
@@ -81,6 +89,16 @@ main {
       list-style: none;
       padding-left: 0;
     }
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: 80vw;
+    align-self: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 60vw;
+    align-self: end;
   }
 }
 
@@ -99,9 +117,7 @@ main {
   }
 
   @include media-breakpoint-up(lg) {
-    .links {
-      padding: 0;
-    }
+    filter: drop-shadow(0 0 20px rgba(black, 0.5));
   }
 }
 
@@ -109,11 +125,17 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: auto;
+  height: 100%;
   z-index: -1;
 
-  @media (max-width: 1300px) {
-    width: auto;
-    height: 100%;
+  @include media-breakpoint-up(md) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 100vw;
+    height: auto;
   }
 }
