@@ -31,7 +31,8 @@ const topics = [
     title: <h5>🏢 Fundador da <a href="https://loewesolucoes.github.io/" target="_blank">@loewe.solucoes</a></h5>,
     description: <>
       <p>Fundei a <a href="https://loewesolucoes.github.io/" target="_blank">@loewe.solucoes</a>, onde aplico minha criatividade e habilidades técnicas para resolver problemas. 💡</p>
-      <p>Também criei um jogo <a href="https://ericoloewe.github.io/snake/" target="_blank" rel="noopener noreferrer">“snake”</a> como projeto pessoal. 🐍</p>
+      <p>Criei um jogo <a href="https://ericoloewe.github.io/snake/" target="_blank" rel="noopener noreferrer">“snake”</a> como projeto pessoal. 🐍</p>
+      <p>Também desenvolvi o projeto <a href="https://ericoloewe.github.io/labirinto-robo-html/" target="_blank" rel="noopener noreferrer">“Labirito Robo”</a> para estudar estrutura de dados. 🤖</p>
     </>,
   },
 ]
